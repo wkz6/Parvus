@@ -186,11 +186,6 @@ local function ObjectOccluded(Enabled, Origin, Position, Object)
 end
 local function SolveTrajectory(Origin, Velocity, Time, Gravity)
     Gravity = Vector3.new(0, Gravity, 0)
-    print("Origin Type:", typeof(Origin))
-    print("Velocity Type:", typeof(Velocity))
-    print("Time Type:", typeof(Time))
-    print("Gravity Type:", typeof(Gravity))
-    print("GravityCorrection Type:", typeof(GravityCorrection))
     GravityCorrection = GravityCorrection or 1 
     return Origin + Velocity * Time + Gravity * Time * Time / GravityCorrection
 end

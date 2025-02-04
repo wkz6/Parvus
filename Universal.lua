@@ -185,7 +185,7 @@ local function ObjectOccluded(Enabled, Origin, Position, Object)
     return Raycast(Origin, Position - Origin, {Object, LocalPlayer.Character})
 end
 local function SolveTrajectory(Origin, Velocity, Time, Gravity)
-    return Origin + Velocity * Time + Gravity * Time * Time / GravityCorrection
+    return Origin + Velocity * Time + Vector3.new(0, Gravity, 0) * Time * Time / GravityCorrection
 end
 local function GetClosest(Enabled,
     TeamCheck, VisibilityCheck, DistanceCheck,

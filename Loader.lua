@@ -84,7 +84,7 @@ LoadScript(Parvus.Game.Script)
 Parvus.Loaded = true
 
 Parvus.Utilities.UI:Push({
-    Title = "Parvus Hub",
+    Title = "Parvus Hub (EDITED)",
     Description = Parvus.Game.Name .. " loaded!\n\nThis script is open sourced\nIf you have paid for this script\nOr had to go thru ads\nYou have been scammed.",
     Duration = NotificationTime
 })
